@@ -1,3 +1,5 @@
 .idea/
 aws-backend/node_modules/
 aws-backend/.serverless/
+
+.DS_Store
