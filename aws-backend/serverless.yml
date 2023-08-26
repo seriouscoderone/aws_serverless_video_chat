@@ -6,12 +6,11 @@ plugins:
   - serverless-webpack
   - serverless-iam-roles-per-function
 
-frameworkVersion: '2'
+frameworkVersion: '3'
 
 provider:
   name: aws
-  runtime: nodejs12.x
-  lambdaHashingVersion: 20201221
+  runtime: nodejs16.x
 
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, 'us-east-1'}
@@ -23,8 +22,8 @@ provider:
     USER_ID_INDEX: UserIdIndex
     USER_EMAIL_INDEX: UserIdIndex
     # CONFIGURE THE ITEMS BELOW FOR YOUR ENVIRONMENT BELOW
-    USER_POOL: arn:aws:cognito-idp:us-east-1:************:userpool/us-east-1_dk8prY4fv
-    JWKS_URL: https://cognito-idp.{region}.amazonaws.com/{userPoolId}/.well-known/jwks.json
+    USER_POOL: arn:aws:cognito-idp:us-east-1:458018444695:userpool/us-east-1_ymy6FAArO
+    JWKS_URL: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_ymy6FAArO/.well-known/jwks.json
 
   tracing:
     lambda: true

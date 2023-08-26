@@ -41,3 +41,39 @@ $ sls deploy --aws-profile serverless
 ```bash
 $ npm start
 ```
+
+
+# Old version
+
+First do front-end to create userpool
+amplify confiugre and create IAM role etc...
+amplify init (and select new environment - not default dev)
+find and replace nodejs12.x with a supported version
+amplify push
+
+
+
+
+make sure no nvm
+install n
+n install 16
+
+
+turn on "CloudWatch Logs for troubleshooting my API Gateway REST API or WebSocket API"
+https://repost.aws/knowledge-center/api-gateway-cloudwatch-logs
+
+
+endpoints:
+  GET - https://yn6uyc54qe.execute-api.us-east-1.amazonaws.com/dev/contacts
+  POST - https://yn6uyc54qe.execute-api.us-east-1.amazonaws.com/dev/contacts
+  GET - https://yn6uyc54qe.execute-api.us-east-1.amazonaws.com/dev/user
+  DELETE - https://yn6uyc54qe.execute-api.us-east-1.amazonaws.com/dev/contacts/{contactId}
+  wss://4pknhwms6a.execute-api.us-east-1.amazonaws.com/dev
+functions:
+  AuthWS: my-video-chat-dev-AuthWS (8 MB)
+  GetContacts: my-video-chat-dev-GetContacts (8 MB)
+  AddContact: my-video-chat-dev-AddContact (8 MB)
+  CreateUser: my-video-chat-dev-CreateUser (8 MB)
+  DeleteContact: my-video-chat-dev-DeleteContact (8 MB)
+  connectionHandler: my-video-chat-dev-connectionHandler (8 MB)
+  defaultHandler: my-video-chat-dev-defaultHandler (8 MB)

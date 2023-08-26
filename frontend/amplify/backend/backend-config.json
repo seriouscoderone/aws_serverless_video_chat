@@ -1,10 +1,10 @@
 {
   "auth": {
     "videochat28c06043": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
+      "customAuth": false,
       "dependsOn": [],
-      "customAuth": false
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
     }
   }
 }

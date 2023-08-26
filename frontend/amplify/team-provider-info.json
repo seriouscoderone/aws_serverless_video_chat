@@ -16,5 +16,23 @@
         "videochat28c06043": {}
       }
     }
+  },
+  "cpewallet": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-videochat-cpewallet-105317-authRole",
+      "UnauthRoleArn": "arn:aws:iam::458018444695:role/amplify-videochat-cpewallet-105317-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::458018444695:role/amplify-videochat-cpewallet-105317-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-videochat-cpewallet-105317-deployment",
+      "UnauthRoleName": "amplify-videochat-cpewallet-105317-unauthRole",
+      "StackName": "amplify-videochat-cpewallet-105317",
+      "StackId": "arn:aws:cloudformation:us-east-1:458018444695:stack/amplify-videochat-cpewallet-105317/0f7d24d0-4431-11ee-af73-0a79bf5d6815",
+      "AmplifyAppId": "d37k6558s00wfj"
+    },
+    "categories": {
+      "auth": {
+        "videochat28c06043": {}
+      }
+    }
   }
 }
